@@ -26,7 +26,8 @@
     "url": "https://github.com/minamarkham/sassy-starter/issues"
   },
   "dependencies": {
-    "modular-scale": "^5.1.0"
+    "modular-scale": "^5.1.0",
+    "node-sass": "^4.9.3"
   },
   "devDependencies": {
     "browser-sync": "^2.0.0-rc4",
