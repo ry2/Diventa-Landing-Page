@@ -2,7 +2,7 @@
 // $FONT-FACE
 // ==========================================================================
 
-// $google-fonts-url: 
+$google-fonts-url: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Playfair+Display:700';
 
 @if variable-exists(google-fonts-url) {
   @import url($google-fonts-url);

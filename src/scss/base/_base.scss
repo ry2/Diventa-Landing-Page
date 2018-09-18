@@ -38,12 +38,18 @@ img {
   max-width: 100%;
 }
 
-h1,
-h2,
+
 h3,
 h4,
 h5,
 h6 {
   font-family: $font-family-display;
-  font-weight: normal;
+  font-weight: medium;
 }
+
+h1,
+h2 {
+  font-family: $font-family-serif;
+  font-weight: bold;
+}
+
