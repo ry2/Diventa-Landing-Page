@@ -1,0 +1,198 @@
+
+nav {  
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-top: em(8) solid $color-primary;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            padding: 10px;
+        }
+    }
+}
+
+section {
+    position: relative;
+}
+
+.grid__container {
+    max-width: 1110px;
+    padding: 5em .5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: em(24);
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    @include mq(medium){
+        grid-template-columns: 1fr 1fr;
+        padding: 10em 1em;
+    }
+    &--cards {
+        max-width: 1110px;
+        padding: 5em .5em;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-gap: em(24);
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        @include mq(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+.container--cta {
+    padding: 10em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .typeform-share {
+        text-transform: uppercase;
+    }
+}
+
+.section {
+
+    &--hero {
+        color: $white;
+        padding-top: 6em;
+        padding-bottom: 6em;
+        // background-color: $color-background-xlight;
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        svg {fill: $color-background-light; }
+        .grid__item--hero {
+            z-index: 400;
+            @include mq(medium) {
+                transform: scale(1.8) translateX(100px);
+                order: 2;
+            }
+        }
+        .grid__item--text {
+            @include mq(medium) {
+                justify-self: left;
+            }
+        }
+    }
+    &--elige {
+        background-color: $color-background-light;
+        svg {fill: $color-background-neutral; }
+        .grid__item--text {
+            @include mq(medium) {
+                order: 2;
+            }
+        }
+    }
+    &--administra {
+        background-color: $color-background-neutral;
+    }
+    &--cobra {
+        background-color: $color-background-light;
+        svg {fill: $color-background-neutral;}
+        .grid__item--text {
+            @include mq(medium) {
+                order: 2;
+            }
+        }
+    }
+    &--beneficios {
+        background-color: $color-background-xlight;
+        svg {fill: $color-background-light;}
+
+    }
+
+    &--cta {
+        color: $white;
+        svg {fill:$color-background-xlight;}
+        // background-color: $minsk;
+        border-bottom: em(8) solid $color-primary;
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+}
+
+.grid__item {
+    &--image {
+        width: 55%;
+        min-width: 310px;
+        justify-self: center;
+        @include mq(medium) {
+            width: 80%;
+        }
+    }
+
+    &--text {
+        width: 80%;
+        min-width: 300px;
+        justify-self: center;
+        @include mq(medium) {
+            
+        }
+    }
+}
+
+// .grid__item {
+//     &--text {
+//         justify-self: start;
+//     }
+
+//     .invert {
+//         order: 2;
+//     }
+
+//     &--imageh {
+//         width: 100%;
+//         position: relative;
+//         @include mq(medium){
+//             .hero {
+                
+//                 transform: scale(1.8) translateX(100px);
+//             }
+//             order: 2;
+//         }
+//     }
+// }
+
+.wave {
+    &--bottom{
+        z-index: 100;
+        height: 32px;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        @include mq(large) {
+            height: 64px;
+        }
+    }
+
+    &--top {
+        height: 32px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(180deg);
+        @include mq(large) {
+            height: 64px;
+        }
+    }    
+}
+
