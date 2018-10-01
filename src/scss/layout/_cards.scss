@@ -65,17 +65,23 @@
 
 
 .button {
+    text-transform: none;
+    background: -webkit-linear-gradient(to left, $greenish, darken($color: $greenish, $amount: 8));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, $greenish, darken($color: $greenish, $amount: 8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
     background-color: $greenish;
     display: inline-block;
     color: $white;
     font-weight: 500;
     font-size: em(20);
     padding: em(20) em(30);
-    border-radius: em(8);
+    border-radius: em(2);
     margin-top: em(16);
+    transition: all 0.5s linear;
+
 
     &:hover {
-        opacity: 90%;
+        background: linear-gradient(to left, darken($color: $greenish, $amount: 10), darken($color: $greenish, $amount: 20))
     }
     
 }
