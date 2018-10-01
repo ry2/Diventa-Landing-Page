@@ -31,6 +31,14 @@ section {
     position: relative;
 }
 
+.grid__full {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include mq(medium) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .grid__container {
     max-width: 1110px;
     padding: 2em .5em;
@@ -108,6 +116,7 @@ section {
     }
     &--elige {
         background-color: $color-background-light;
+        h2{color: $color-primary;}
         svg {fill: $color-background-neutral; }
         .grid__item--text {
             @include mq(medium) {
@@ -117,10 +126,12 @@ section {
     }
     &--administra {
         background-color: $color-background-neutral;
+        h2{color: $color-primary;}
     }
     &--cobra {
         background-color: $color-background-light;
         svg {fill: $color-background-neutral;}
+        h2{color: $color-primary;}
         .grid__item--text {
             @include mq(medium) {
                 order: 2;
@@ -142,6 +153,13 @@ section {
         background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    }
+
+    &--vendedor {
+        svg{fill: $color-background-light;}
+        padding: 0;
+        margin: 0;
+        color: $white;
     }
 
 }
