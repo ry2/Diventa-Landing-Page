@@ -194,11 +194,11 @@ html, body {
   overflow-x: hidden; }
 
 ::selection {
-  background: #BA68EF;
+  background: #47BFA4;
   /* WebKit/Blink Browsers */ }
 
 ::-moz-selection {
-  background: #BA68EF;
+  background: #47BFA4;
   /* Gecko Browsers */ }
 
 *:before, *:after {

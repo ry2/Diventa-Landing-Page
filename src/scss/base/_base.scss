@@ -12,10 +12,10 @@ html, body {
 }
 
 ::selection {
-  background: $pinkish; /* WebKit/Blink Browsers */
+  background: $greenish; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: $pinkish; /* Gecko Browsers */
+  background: $greenish; /* Gecko Browsers */
 }
 
 * {
