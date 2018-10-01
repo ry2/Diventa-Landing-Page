@@ -427,12 +427,13 @@ section {
 .grid__item--text h4 {
   margin-bottom: 0; }
 .grid__item--text h2 {
+  font-size: 2.5em;
   margin-top: 0.125em;
   margin-bottom: 0.5em;
   color: #3C2D89; }
 .grid__item--text p {
   margin-top: 0;
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 @media print {
   *:before, *:after {
