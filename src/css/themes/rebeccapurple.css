@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Playfair+Display:700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700|Montserrat:400,500,600,700");
 article,
 aside,
 details,
@@ -193,12 +193,20 @@ html, body {
   max-width: 100%;
   overflow-x: hidden; }
 
+::selection {
+  background: #BA68EF;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #BA68EF;
+  /* Gecko Browsers */ }
+
 *:before, *:after {
   box-sizing: inherit; }
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: #484c55;
+  color: #333;
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   min-height: 100%;
   overflow-x: hidden;
@@ -223,7 +231,8 @@ h6 {
 
 h1,
 h2 {
-  font-family: "Playfair Display", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  line-height: 1.2;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-weight: bold; }
 
 nav {
@@ -242,14 +251,22 @@ nav {
     margin: 0;
     padding: 0; }
     nav ul li {
-      padding: 10px; }
+      padding: 15px; }
+      @media (min-width: 768px) {
+        nav ul li {
+          padding: 30px; } }
+      nav ul li img {
+        max-height: 16px; }
+        @media (min-width: 768px) {
+          nav ul li img {
+            max-height: 24px; } }
 
 section {
   position: relative; }
 
 .grid__container {
   max-width: 1110px;
-  padding: 5em .5em;
+  padding: 2em .5em;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -259,7 +276,7 @@ section {
   @media (min-width: 768px) {
     .grid__container {
       grid-template-columns: 1fr 1fr;
-      padding: 10em 1em; } }
+      padding: 6em 1em; } }
   .grid__container--cards {
     max-width: 1110px;
     padding: 5em .5em;
@@ -287,14 +304,18 @@ section {
 
 .section--hero {
   color: #fff;
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding-top: 0;
+  padding-bottom: 2em;
   background: #0f0c29;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  @media (min-width: 768px) {
+    .section--hero {
+      padding-top: 6em;
+      padding-bottom: 6em; } }
   .section--hero svg {
     fill: #F4F5FA; }
   .section--hero .grid__item--hero {
@@ -388,20 +409,30 @@ section {
       justify-self: stretch;
       align-self: stretch; } }
   .grid__container--cards .cards img {
-    max-width: 128px;
-    margin-top: 4em;
-    margin-bottom: 4em; }
+    max-width: 80px;
+    margin-top: 2em;
+    margin-bottom: 2em; }
   .grid__container--cards .cards hr {
     border-top: 1px solid #f4f4f4;
-    width: 100%;
+    width: 90%;
     margin-bottom: 1.5em; }
   .grid__container--cards .cards h3 {
     margin-top: 0;
     margin-bottom: 0.25em;
-    color: #484c55; }
+    color: #333; }
   .grid__container--cards .cards p {
     font-size: 1.125em;
     margin-top: 0; }
+
+.grid__item--text h4 {
+  margin-bottom: 0; }
+.grid__item--text h2 {
+  margin-top: 0.125em;
+  margin-bottom: 0.5em;
+  color: #3C2D89; }
+.grid__item--text p {
+  margin-top: 0;
+  line-height: 1.4; }
 
 @media print {
   *:before, *:after {

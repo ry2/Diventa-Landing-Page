@@ -13,7 +13,16 @@ nav {
         margin: 0;
         padding: 0;
         li{
-            padding: 10px;
+            padding: 15px;
+            @include mq(medium){
+                padding: 30px;
+            }
+            img {
+                max-height: 16px;
+                @include mq(medium){
+                    max-height: 24px;
+                }
+            }
         }
     }
 }
@@ -24,7 +33,7 @@ section {
 
 .grid__container {
     max-width: 1110px;
-    padding: 5em .5em;
+    padding: 2em .5em;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -34,7 +43,7 @@ section {
 
     @include mq(medium){
         grid-template-columns: 1fr 1fr;
-        padding: 10em 1em;
+        padding: 6em 1em;
     }
     &--cards {
         max-width: 1110px;
@@ -69,13 +78,16 @@ section {
 
     &--hero {
         color: $white;
-        padding-top: 6em;
-        padding-bottom: 6em;
+        padding-top: 0;
+        padding-bottom: 2em;
         // background-color: $color-background-xlight;
         background: #0f0c29;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+        @include mq(medium) {
+            padding-top: 6em;
+            padding-bottom: 6em;
+        }
         svg {fill: $color-background-light; }
         .grid__item--hero {
             z-index: 400;

@@ -16,13 +16,14 @@ $iron:                      #dadbdf;
 $regent-grey:               #808c99;
 $pale-sky:                  #6b717f;
 $midnight-blue:             #036;
-$black:                     #000;
+$black:                     #333;
 $grey:                      #f4f4f4;
 
 $light-grayish-blue:      #F4F5FA;
 $grayish-blue:            #EEEEF6;
 $dark-desaturated-blue:   #423D71;
 $minsk:                   #3C2D89;
+$pinkish:                 #BA68EF;
 
 // main color palette
 // =============
@@ -42,7 +43,7 @@ $color-background-neutral:  $grayish-blue;
 $color-background:          $white;
 $color-background-shade:    $iron;
 $color-background-invert:   $hopbush;
-$color-text:                darken($pale-sky, 15);
+$color-text:                $black;
 $color-text-weak:           $regent-grey;
 $color-text-strong:         $midnight-blue;
 $color-text-heading:        $regent-grey;

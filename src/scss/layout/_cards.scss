@@ -20,13 +20,13 @@
             // width: 95%;
         }
         img {
-            max-width: 128px;
-            margin-top: em(64);
-            margin-bottom: em(64);
+            max-width: 80px;
+            margin-top: em(32);
+            margin-bottom: em(32);
         }
         hr {
-            border-top: 1px solid $color-border;
-            width: 100%;
+            border-top: 1px solid #f4f4f4;
+            width: 90%;
             margin-bottom: em(24);
           }
         h3 {
@@ -41,3 +41,26 @@
         
     }
 }
+
+.grid__item--text {
+    h4 {
+        margin-bottom: 0;
+    }
+    h2 {
+        margin-top: em(2);
+        margin-bottom: em(8);
+        color: $minsk;
+    }
+    p {
+        margin-top: 0;
+        line-height: 1.4;
+    }
+}
+
+// .section {
+//     &--hero {
+
+//     }
+
+
+// }
