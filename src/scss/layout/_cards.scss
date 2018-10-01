@@ -42,15 +42,20 @@
     }
 }
 
+
+
 .grid__item--text {
     h4 {
         margin-bottom: 0;
     }
     h2 {
-        font-size: em(40);
+        font-size: em(24);
         margin-top: em(2);
         margin-bottom: em(8);
         color: $minsk;
+        @include mq(medium){
+            font-size: em(40);
+        }
     }
     p {
         margin-top: 0;
@@ -58,6 +63,32 @@
     }
 }
 
+
+.button {
+    background-color: $greenish;
+    display: inline-block;
+    color: $white;
+    font-weight: 500;
+    font-size: em(20);
+    padding: em(20) em(30);
+    border-radius: em(8);
+    margin-top: em(16);
+
+    &:hover {
+        opacity: 90%;
+    }
+    
+}
+
+.early-access {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    width: 80px;
+    height: 80px;
+    // background-color: black;
+}
 // .section {
 //     &--hero {
 

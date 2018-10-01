@@ -1,7 +1,7 @@
 @viewport { width: device-width; }
 
 html {
-  background-color: $color-background;
+  background-color: $color-primary;
   box-sizing: border-box;
   height: 100%;
 }
@@ -61,3 +61,9 @@ h2 {
   // color: 
 }
 
+h1 {
+  font-size: em(28);
+  @include mq(medium) {
+    font-size: em(40);
+  }
+}

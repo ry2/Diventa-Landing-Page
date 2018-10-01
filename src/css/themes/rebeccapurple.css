@@ -185,7 +185,7 @@ input[type="checkbox"], input[type="radio"] {
 @viewport {
   width: device-width; }
 html {
-  background-color: #fff;
+  background-color: #3C2D89;
   box-sizing: border-box;
   height: 100%; }
 
@@ -234,6 +234,12 @@ h2 {
   line-height: 1.2;
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-weight: bold; }
+
+h1 {
+  font-size: 1.75em; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5em; } }
 
 nav {
   color: aliceblue;
@@ -427,13 +433,36 @@ section {
 .grid__item--text h4 {
   margin-bottom: 0; }
 .grid__item--text h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-top: 0.125em;
   margin-bottom: 0.5em;
   color: #3C2D89; }
+  @media (min-width: 768px) {
+    .grid__item--text h2 {
+      font-size: 2.5em; } }
 .grid__item--text p {
   margin-top: 0;
   line-height: 1.5; }
+
+.button {
+  background-color: #47BFA4;
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25em;
+  padding: 1.25em 1.875em;
+  border-radius: 0.5em;
+  margin-top: 1em; }
+  .button:hover {
+    opacity: 90%; }
+
+.early-access {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 200;
+  width: 80px;
+  height: 80px; }
 
 @media print {
   *:before, *:after {
